@@ -4,12 +4,10 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import Employees from './pages/Employees';
-import Performance from './pages/Performance';
-import Leaves from './pages/Leaves';
-import Attendance from './pages/Attendance';
-import Development from './pages/Development';
-import Templates from './pages/Templates';
-import Documents from './pages/Documents';
+import Attendance from './pages/Attendance/Attendance';
+import Development from './pages/Professional/ProfessionalDevelopment';
+import Templates from './pages/Templates/Templates';
+import Documents from './pages/Documents/DocumentManagement';
 import './App.css';
 function App() {
   return (
@@ -21,8 +19,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/employees" element={<Employees />} />
-            <Route path="/performance" element={<Performance />} />
-            <Route path="/leaves" element={<Leaves />} />
             <Route path="/attendance" element={<Attendance />} />
             <Route path="/development" element={<Development />} />
             <Route path="/templates" element={<Templates />} />

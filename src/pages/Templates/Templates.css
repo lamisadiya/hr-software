@@ -1,0 +1,19 @@
+.template-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.template-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.template-table th,
+.template-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
