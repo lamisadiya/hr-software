@@ -1,0 +1,9 @@
+.app{
+  display:flex;
+  font-family: 'Times New Roman', Times, serif;
+}
+.main-content{
+flex-grow: 240px;
+padding: 20px;
+background-color: #f6f9fc;
+}

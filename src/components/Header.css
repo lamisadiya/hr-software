@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-pic {
+  width: 40px;
+  border-radius: 50%;
+}
