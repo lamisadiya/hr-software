@@ -8,6 +8,9 @@ import Attendance from './pages/Attendance/Attendance';
 import Development from './pages/Professional/ProfessionalDevelopment';
 import Templates from './pages/Templates/Templates';
 import Documents from './pages/Documents/DocumentManagement';
+import PerformanceTracking from './pages/Employees/PerformanceTracking';
+import LeaveManagement from './pages/Employees/LeaveManagement';
+
 import './App.css';
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
             <Route path="/development" element={<Development />} />
             <Route path="/templates" element={<Templates />} />
             <Route path="/documents" element={<Documents />} />
+            <Route path="/employees/performance" element={<PerformanceTracking />} />
+            <Route path="/employees/leave" element={<LeaveManagement />} />
+
           </Routes>
         </main>
       </div>
