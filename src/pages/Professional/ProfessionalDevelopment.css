@@ -2,38 +2,38 @@
   --primary-color: #1a1a2e;
   --accent-blue: #1976D3;
   --accent-red: #F44336;
-  --accent-green: #4CAF50;
   --text-color: #333;
   --border-radius: 8px;
   --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.leave-container {
-  max-width: 600px;
+.professional-development-container {
+  max-width: 900px;
   margin: 24px auto;
   padding: 16px;
   animation: fadeIn 0.5s ease-in;
 }
 
-.leave-title {
+.professional-development-title {
   font-size: 24px;
   font-weight: 600;
   color: var(--text-color);
   margin-bottom: 24px;
 }
 
-.leave-form {
+.professional-development-form {
   background: white;
   padding: 24px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  margin-bottom: 24px;
 }
 
 .form-group {
   margin-bottom: 16px;
 }
 
-.leave-form label {
+.professional-development-form label {
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -41,9 +41,8 @@
   margin-bottom: 8px;
 }
 
-.leave-form input,
-.leave-form select,
-.leave-form textarea {
+.professional-development-form input,
+.professional-development-form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
@@ -52,31 +51,30 @@
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.leave-form input:focus,
-.leave-form select:focus,
-.leave-form textarea:focus {
+.professional-development-form input:focus,
+.professional-development-form textarea:focus {
   outline: none;
   border-color: var(--accent-blue);
   box-shadow: 0 0 0 3px rgba(25, 118, 211, 0.1);
 }
 
-.leave-form textarea {
+.professional-development-form textarea {
   min-height: 100px;
   resize: vertical;
 }
 
-.leave-form .input-error {
+.professional-development-form .input-error {
   border-color: var(--accent-red);
 }
 
-.leave-form .error-message {
+.professional-development-form .error-message {
   color: var(--accent-red);
   font-size: 12px;
   margin-top: 4px;
   display: block;
 }
 
-.leave-form button {
+.professional-development-form button {
   background-color: var(--accent-blue);
   color: white;
   padding: 12px 24px;
@@ -88,43 +86,46 @@
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.leave-form button:hover:not(:disabled) {
+.professional-development-form button:hover {
   background-color: #1565c0;
   transform: translateY(-2px);
 }
 
-.leave-form button:disabled {
-  background-color: #90caf9;
-  cursor: not-allowed;
-}
-
-.leave-form button:active:not(:disabled) {
+.professional-development-form button:active {
   transform: translateY(0);
 }
 
-.spinner {
-  text-align: center;
-  font-size: 16px;
-  color: var(--accent-blue);
-  padding: 24px;
+.professional-development-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
 }
 
-.message {
-  margin-top: 16px;
+.professional-development-table th,
+.professional-development-table td {
   padding: 12px;
-  border-radius: 4px;
-  font-size: 14px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.professional-development-table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+.professional-development-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.professional-development-table .no-data {
   text-align: center;
-}
-
-.message.success {
-  background-color: rgba(76, 175, 80, 0.1);
-  color: var(--accent-green);
-}
-
-.message.error {
-  background-color: rgba(244, 67, 54, 0.1);
-  color: var(--accent-red);
+  padding: 24px;
+  color: var(--text-color);
+  font-style: italic;
 }
 
 @keyframes fadeIn {
@@ -133,16 +134,22 @@
 }
 
 @media (max-width: 600px) {
-  .leave-container {
+  .professional-development-container {
     margin: 16px;
     padding: 8px;
   }
 
-  .leave-form {
+  .professional-development-form {
     padding: 16px;
   }
 
-  .leave-title {
+  .professional-development-title {
     font-size: 20px;
+  }
+
+  .professional-development-table th,
+  .professional-development-table td {
+    padding: 8px;
+    font-size: 12px;
   }
 }
