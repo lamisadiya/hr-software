@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './EmployeeList.css'; // Optional for styling
 
 const EmployeeList = ({ employees, onDelete }) => {
   const [activeTab, setActiveTab] = useState(null);

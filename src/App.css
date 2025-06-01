@@ -1,9 +1,55 @@
-.app{
-  display:flex;
-  font-family: 'Times New Roman', Times, serif;
+
+/* App.css */
+:root {
+  --primary-color: #1a1a2e;
+  --secondary-color: #f6f9fc;
+  --accent-green: #4CAF50;
+  --accent-red: #F44336;
+  --accent-blue: #1976D3;
+  --text-color: #333;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.main-content{
-flex-grow: 240px;
-padding: 20px;
-background-color: #f6f9fc;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 24px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.main-content > * {
+  animation: fadeIn 0.5s ease-in;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .sidebar .logo {
+    font-size: 18px;
+  }
+
+  .sidebar li a span {
+    display: none;
+  }
+
+  .widgets-row {
+    grid-template-columns: 1fr;
+  }
 }

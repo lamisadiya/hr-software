@@ -10,7 +10,10 @@ import Templates from './pages/Templates/Templates';
 import Documents from './pages/Documents/DocumentManagement';
 import PerformanceTracking from './pages/Employees/PerformanceTracking';
 import LeaveManagement from './pages/Employees/LeaveManagement';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+  
 import './App.css';
 function App() {
   return (
@@ -30,6 +33,7 @@ function App() {
             <Route path="/employees/leave" element={<LeaveManagement />} />
 
           </Routes>
+          <ToastContainer position="top-right" autoClose={3000} />
         </main>
       </div>
     </Router>
